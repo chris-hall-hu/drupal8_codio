@@ -25,4 +25,8 @@ You can either watch all the scrolly bits or you may almost have time to make a 
 
 Hopefully when finished you will have all the Drupal files in the file browser on the left (works against your /home/codio/workspace directory where Drupal has been installed). You can also play with the Drupal site by selecting Box URL from the most right hand menu.
 
+##TODO
+
+Make this a bit smarter, actually check you are on a codio box etc. etc.
+
 
