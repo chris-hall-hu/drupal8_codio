@@ -1,7 +1,8 @@
 # Introduction
 
-A simple script and sql to install the latest verstion of Drupal 8 code via Drush on a Codio box.
+A simple script and sql to install the latest version of Drupal 8 code via Drush on a Codio box.
 
+Really it is just performing all the steps on [This blog post](http://running-on-drupal8.co.uk/node/20)
 Aiming to save a few mins, mostly for me but might help others to get started quickly as there are a few minor elements that make developing on a Codio box a little different from a regular server.
 
 ## Instructions 
@@ -27,6 +28,8 @@ Hopefully when finished you will have all the Drupal files in the file browser o
 
 ##TODO
 
-Make this a bit smarter, actually check you are on a codio box etc. etc.
+ - Make this a bit smarter, actually check you are on a codio box etc. etc.
+ - Add some options for alternative git repos of Drupal code.
+ - Add a reset script to write a new install of Drupal over the existing one.
 
 
