@@ -2,7 +2,11 @@
 
 A simple script and sql to install the latest version of Drupal 8 code via Drush on a Codio box.
 
-Really it is just performing all the steps on [This blog post](http://running-on-drupal8.co.uk/node/20)
+Really it is just performing all the steps on [This blog post](http://running-on-drupal8.co.uk/node/20) with few minor improvements eg:
+
+ - create a master branch for local development
+ - copy example.gitignore to .gitignore
+ 
 Aiming to save a few mins, mostly for me but might help others to get started quickly as there are a few minor elements that make developing on a Codio box a little different from a regular server.
 
 ## Instructions 
