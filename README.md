@@ -6,6 +6,8 @@ Really it is just performing all the steps on [This blog post](http://running-on
 
  - create a master branch for local development
  - copy example.gitignore to .gitignore
+
+There is also a [public project](https://codio.com/chris-hall-hu-cheng/Drupal-8-starter-box) on Codio.com which is the results of running this script this can be forked and woud be the quickest way to working on a Drupal 8 box on Codio. 
  
 Aiming to save a few mins, mostly for me but might help others to get started quickly as there are a few minor elements that make developing on a Codio box a little different from a regular server.
 
