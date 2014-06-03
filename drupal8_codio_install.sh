@@ -8,16 +8,21 @@ parts start mysql apache2
 # Run everything for the Database
 mysql -u root < ./create_database.sql
 
-# Fetch Drupal, get 8.x and create a master branch
-cd /home/codio/workspace
-git remote add drupal8 http://git.drupal.org/project/drupal.git
-git fetch drupal8 8.x
-git checkout  8.x
-git pull drupal8 8.x
-git checkout -b master
+# Check to see if there is any code in workspace yet
 
-# Pull in the standard git ignores 
-cp -p example.gitignore .gitignore
+if [ ! -f /home/codio/workspace/index.php ]
+ then
+  # Fetch Drupal, get 8.x and create a master branch
+  cd /home/codio/workspace
+  git remote add drupal8 http://git.drupal.org/project/drupal.git
+  git fetch drupal8 8.x
+  git checkout  8.x
+  git pull drupal8 8.x
+  git checkout -b master
+
+  # Pull in the standard git ignores 
+  cp -p example.gitignore .gitignore
+fi
 
 # Install drush
 cd /home/codio
