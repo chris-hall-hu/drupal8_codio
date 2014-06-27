@@ -31,6 +31,8 @@ cd drush
 composer install
 
 # Make drush globally available
+# Toda: it woud be nicer if drush could be installed with composer global install
+#   but that doesn't appear to work on Codio
 cd /home/codio/.parts/bin 
 ln -s /home/codio/drush/drush drush
 
