@@ -15,9 +15,9 @@ if [ ! -f /home/codio/workspace/index.php ]
   # Fetch Drupal, get 8.x and create a master branch
   cd /home/codio/workspace
   git remote add drupal8 http://git.drupal.org/project/drupal.git
-  git fetch drupal8 8.x
-  git checkout  8.x
-  git pull drupal8 8.x
+  git fetch drupal8 8.0.x
+  git checkout  8.0.x
+  git pull drupal8 8.0.x
   git checkout -b master
 
   # Pull in the standard git ignores 
