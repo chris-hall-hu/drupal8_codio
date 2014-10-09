@@ -1,3 +1,6 @@
+# Import the version ($version).
+. drupal_version.txt
+
 
 # Install all the parts packages required
 parts install php5 php5-apache2 php5-pdo-mysql php5-gd mysql composer
@@ -15,9 +18,9 @@ if [ ! -f /home/codio/workspace/index.php ]
   # Fetch Drupal, get 8.x and create a master branch
   cd /home/codio/workspace
   git remote add drupal8 http://git.drupal.org/project/drupal.git
-  git fetch drupal8 8.0.x
-  git checkout  8.0.x
-  git pull drupal8 8.0.x
+  git fetch drupal8 $version
+  git checkout  $version
+  git pull drupal8 $version
   git checkout -b master
 
   # Pull in the standard git ignores 

@@ -1,11 +1,14 @@
 # Introduction
 
-A simple script and sql to install the latest version of Drupal 8 code via Drush on a Codio box.
+A simple script and sql to install a chosen version of Drupal 8 code via Drush on a Codio box.
+
+By default the 8.x branch is installed but a different tag or branch can be setup by editing the file drupal_version.txt.
 
 Really it is just performing all the steps on [This blog post](http://running-on-drupal8.co.uk/node/20) with few minor improvements eg:
 
  - create a master branch for local development
  - copy example.gitignore to .gitignore
+ - allow option to override the version tag installed in a .txt file
 
 There is also a [public project](https://codio.com/chris-hall-hu-cheng/Drupal-8-starter-box) on Codio.com which is the results of running this script this can be forked and woud be the quickest way to working on a Drupal 8 box on Codio. 
  
