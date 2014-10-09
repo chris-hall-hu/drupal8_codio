@@ -2,7 +2,7 @@
 
 A simple script and sql to install a chosen version of Drupal 8 code via Drush on a Codio box.
 
-By default the 8.x branch is installed but a different tag or branch can be setup by editing the file drupal_version.txt.
+By default the 8.0.x branch is installed but a different tag or branch can be setup by editing the file drupal_version.txt.
 
 Really it is just performing all the steps on [This blog post](http://running-on-drupal8.co.uk/node/20) with few minor improvements eg:
 
