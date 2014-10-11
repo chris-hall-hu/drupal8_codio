@@ -1,4 +1,4 @@
-# Import the version ($version).
+# Import the version ($version) and tag ($tag).
 . drupal_version.txt
 
 
@@ -13,15 +13,20 @@ mysql -u root < ./create_database.sql
 
 # Check to see if there is any code in workspace yet
 
-if [ ! -f /home/codio/workspace/index.php ]
- then
+if [ ! -f /home/codio/test/index.php ]; then
   # Fetch Drupal, get 8.x and create a master branch
   cd /home/codio/workspace
-  git remote add drupal8 http://git.drupal.org/project/drupal.git
-  git fetch drupal8 $version
-  git checkout  $version
-  git pull drupal8 $version
-  git checkout -b master
+  git remote add drupal http://git.drupal.org/project/drupal.git
+
+  if [ "" == "$tag" ]; then
+    git fetch drupal $branch
+    git checkout $branch
+    git pull drupal $branch
+    git checkout -b master
+  else
+    git fetch drupal -t
+    git checkout $tag                                                                                     
+  fi              
 
   # Pull in the standard git ignores 
   cp -p example.gitignore .gitignore
@@ -34,7 +39,7 @@ cd drush
 composer install
 
 # Make drush globally available
-# Toda: it woud be nicer if drush could be installed with composer global install
+# Todo: it woud be nicer if drush could be installed with composer global install
 #   but that doesn't appear to work on Codio
 cd /home/codio/.parts/bin 
 ln -s /home/codio/drush/drush drush

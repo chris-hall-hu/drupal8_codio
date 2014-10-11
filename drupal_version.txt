@@ -1,1 +1,6 @@
-version='8.0.x'
+# These variables set which branch or tag will be loaded.
+# Note that if tag has a value it will override the branch value,
+#    for example to install the first Drupal Beta the value of tag
+#    should be 8.0.0-beta1.
+branch='8.0.x';
+tag='';
