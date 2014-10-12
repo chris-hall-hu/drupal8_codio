@@ -47,5 +47,5 @@ ln -s /home/codio/drush/drush drush
 cd /home/codio/workspace
 
 # Install Drupal
-drush -y si standard --db-url=mysql://drupal:drupal@localhost/drupal --site-name=drupal8.codio --account-name=admin --account-pass=admin --account-mail=admin@drupal8.codio
+drush -y si standard --db-url=mysql://drupal:drupal@localhost/drupal --site-name=drupal.codio --account-name=admin --account-pass=admin --account-mail=admin@drupal8.codio
 
