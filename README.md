@@ -1,8 +1,10 @@
 # Introduction
 
-A simple script and sql to install a chosen version of Drupal 8 code via Drush on a Codio box.
+A simple script and sql to install a chosen version of Drupal code via Drush on a Codio box.
 
-By default the 8.0.x branch is installed but a different tag or branch can be setup by editing the file drupal_version.txt.
+By default the 8.0.0.x development branch is installed but a different tag or branch can be setup by editing the file drupal_version.txt; by entering a value for tag you can install a specific version, including older varieties of Drupal such as '7.28'.
+
+If installing a tag version the workspace git will have a detached HEAD, when branches are installed a master branch is then created, you should be able to adapt to your own way of working with Git and Drupal.
 
 Really it is just performing all the steps on [This blog post](http://running-on-drupal8.co.uk/node/20) with few minor improvements eg:
 
