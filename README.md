@@ -40,7 +40,6 @@ Hopefully when finished you will have all the Drupal files in the file browser o
 ##TODO
 
  - Make this a bit smarter, actually check you are on a codio box etc. etc.
- - Add some options for alternative git repos of Drupal code.
  - Add a reset script to write a new install of Drupal over the existing one.
 
 
