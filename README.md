@@ -30,7 +30,7 @@ Move into the new directory and run the script:
 
 ```
 cd drupal8_codio
-./drupal8_codio_install.sh
+./drupal_codio_install.sh
 ```
 
 You can either watch all the scrolly bits or you may almost have time to make a quick coffee. 
