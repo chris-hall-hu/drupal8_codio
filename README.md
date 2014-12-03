@@ -43,7 +43,7 @@ Hopefully when finished you will have all the Drupal files in the file browser o
  - Add a reset script to write a new install of Drupal over the existing one.
  - Create the Codio startup script, to ensure that all required services are running.
  - Improve messaging
- - Consider other tools that may be uses to install.
+ - Consider other tools that may be useful to install.
 
 
 
