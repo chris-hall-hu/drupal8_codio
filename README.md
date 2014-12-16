@@ -2,7 +2,7 @@
 
 A simple script and sql to install a chosen version of Drupal code via Drush on a Codio box.
 
-By default the 8.0.0.x development branch is installed but a different tag or branch can be setup by editing the file drupal_version.txt; by entering a value for tag you can install a specific version, including older varieties of Drupal such as '7.28'.
+By default the 8.0.x development branch is installed but a different tag or branch can be setup by editing the file drupal_version.txt; by entering a value for tag you can install a specific version, including older varieties of Drupal such as '7.28'.
 
 If installing a tag version the workspace git will have a detached HEAD, when branches are installed a master branch is then created, you should be able to adapt to your own way of working with Git and Drupal.
 
@@ -12,13 +12,13 @@ Really it is just performing all the steps on [This blog post](http://running-on
  - copy example.gitignore to .gitignore
  - allow option to override the version tag installed in a .txt file
 
-There is also a [public project](https://codio.com/chris-hall-hu-cheng/Drupal-8-starter-box) on Codio.com which is the results of running this script this can be forked and woud be the quickest way to working on a Drupal 8 box on Codio. 
+There is also a [public project](https://codio.com/chris-hall-hu-cheng/Drupal-8-starter-box) on Codio.com which is the results of running this script this can be forked and would be the quickest way to working on a Drupal 8 box on Codio. 
  
 Aiming to save a few mins, mostly for me but might help others to get started quickly as there are a few minor elements that make developing on a Codio box a little different from a regular server.
 
 ## Instructions 
 
-Start a new codio project as empty template (NOT the default HTML Boilerplate).
+Start a new codio project as empty template (NOT the default HTML Boilerplate). **Note** Codio has made a number of changes recently, this script was last tested on the ```codio-certified / Codio Base Stack``` and worked well.
 
 Open a terminal via ```Tools -> Terminal```
 
