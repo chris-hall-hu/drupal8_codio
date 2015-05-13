@@ -12,8 +12,6 @@ Really it is just performing all the steps on [This blog post](http://running-on
  - copy example.gitignore to .gitignore
  - allow option to override the version tag installed in a .txt file
 
-There is also a [public project](https://codio.com/chris-hall-hu-cheng/Drupal-8-starter-box) on Codio.com which is the results of running this script this can be forked and would be the quickest way to working on a Drupal 8 box on Codio. 
- 
 Aiming to save a few mins, mostly for me but might help others to get started quickly as there are a few minor elements that make developing on a Codio box a little different from a regular server.
 
 ## Instructions 
@@ -36,6 +34,8 @@ cd drupal8_codio
 You can either watch all the scrolly bits or you may almost have time to make a quick coffee. 
 
 Hopefully when finished you will have all the Drupal files in the file browser on the left (works against your /home/codio/workspace directory where Drupal has been installed). You can also play with the Drupal site by selecting Box URL from the most right hand menu.
+
+**NOTE**: A master branch is created, and is the branch that will be checked out initially, I prefer this approach as I can still pull in and merge changes for the Drupal dev branch if I am working against dev, but I get to choose when and if to merge that with my master (D8 changes can still break things on a daily basis). Your remote is called drupal and if you did not change the drupal_version.txt you will also have an 8.0.x branch you can switch to locally. 
 
 ##TODO
 
