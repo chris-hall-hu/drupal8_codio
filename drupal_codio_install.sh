@@ -2,11 +2,14 @@
 . drupal_version.txt
 
 # Install all the parts packages required
-parts install php5 php5-apache2 php5-pdo-mysql php5-gd mysql composer
+parts install php5 php5-apache2 php5-pdo-mysql php5-gd php5-pcntl  mysql composer
+
+# Get the latest version of composer
+composer selfupdate
 
 # Put the Codio startup script in place to make sure apache and mysql are
 # started each time the box is accessed.
-mv ./startup.sh ../workspace/
+cp -pr ./startup.sh ../workspace/
 
 # Ensure that Mysql and Apache are running
 parts start mysql apache2
