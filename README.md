@@ -1,6 +1,6 @@
 # Introduction
 
-A simple script and sql to install a chosen version of Drupal code via Drush on a Codio box.
+A simple script and sql to install a chosen version of Drupal code via Drush on a Codio box, along with all the software they require. A Codio startup.sh is also copied into the workspace so that mysql and apache are started each time the Codio box is accessed.
 
 By default the 8.0.x development branch is installed but a different tag or branch can be setup by editing the file drupal_version.txt; by entering a value for tag you can install a specific version, including older varieties of Drupal such as '7.28'.
 
@@ -41,7 +41,6 @@ Hopefully when finished you will have all the Drupal files in the file browser o
 
  - Make this a bit smarter, actually check you are on a codio box etc. etc.
  - Add a reset script to write a new install of Drupal over the existing one.
- - Create the Codio startup script, to ensure that all required services are running.
  - Improve messaging
  - Consider other tools that may be useful to install.
 

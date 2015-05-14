@@ -1,9 +1,12 @@
 # Import the version ($version) and tag ($tag).
 . drupal_version.txt
 
-
 # Install all the parts packages required
 parts install php5 php5-apache2 php5-pdo-mysql php5-gd mysql composer
+
+# Put the Codio startup script in place to make sure apache and mysql are
+# started each time the box is accessed.
+mv ./startup.sh ../workspace/
 
 # Ensure that Mysql and Apache are running
 parts start mysql apache2
@@ -48,4 +51,5 @@ cd /home/codio/workspace
 
 # Install Drupal
 drush -y si standard --db-url=mysql://drupal:drupal@localhost/drupal --site-name=drupal.codio --account-name=admin --account-pass=admin --account-mail=admin@drupal8.codio
+
 
