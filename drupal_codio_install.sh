@@ -2,7 +2,7 @@
 . drupal_version.txt
 
 # Install all the parts packages required
-parts install php5 php5-apache2 php5-pdo-mysql php5-gd php5-pcntl  mysql composer
+parts install php5 php5-apache2 php5-pdo-mysql php5-gd php5-zlib php5-pcntl mysql composer
 
 # Get the latest version of composer
 composer selfupdate
