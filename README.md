@@ -35,7 +35,7 @@ You can either watch all the scrolly bits or you may almost have time to make a 
 
 Hopefully when finished you will have all the Drupal files in the file browser on the left (works against your /home/codio/workspace directory where Drupal has been installed). You can also play with the Drupal site by selecting Box URL from the most right hand menu.
 
-**NOTE**: A master branch is created, and is the branch that will be checked out initially, I prefer this approach as I can still pull in and merge changes for the Drupal dev branch if I am working against dev, but I get to choose when and if to merge that with my master (D8 changes can still break things on a daily basis). Your remote is called drupal and if you did not change the drupal_version.txt you will also have an 8.0.x branch you can switch to locally. 
+**NOTE**: Codio initialises the workspace directory with an empty git repro, this script remove that and leaves you in the same same state as if you cloned the Drupal branch or tag in an empty directory. 
 
 ##TODO
 
