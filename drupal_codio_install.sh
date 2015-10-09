@@ -12,7 +12,7 @@ composer selfupdate
 parts start mysql apache2
 
 # Run everything for the Database
-#mysql -u root < ./create_database.sql
+mysql -u root < ./create_database.sql
 
 # Check to see if there is any Drupal code in workspace yet
 if [ ! -f /home/codio/workspace/index.php ]; then
@@ -30,6 +30,9 @@ if [ ! -f /home/codio/workspace/index.php ]; then
 
   # Pull in the standard git ignores 
   cp -p example.gitignore .gitignore
+else
+  # Exit as we do not attempt to overwrite existing installations
+  exit
 fi
 
 # Install drush
@@ -51,4 +54,4 @@ drush -y si standard --db-url=mysql://drupal:drupal@localhost/drupal --site-name
 
 # Put the Codio startup script in place to make sure apache and mysql are
 # started each time the box is accessed.
-cp -pr ./startup.sh ../workspace/
+cp -pr /home/codio/drupal8_codio/startup.sh /home/codio/workspace/
