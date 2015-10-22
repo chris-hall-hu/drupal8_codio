@@ -1,4 +1,6 @@
-# Introduction
+**NOTE**: I am no longer using Codio so not able to maintain this, happy to take merge pull requests, but not able to test.
+
+#Introduction
 
 A simple script and sql to install a chosen version of Drupal code via Drush on a Codio box, along with all the software they require. A Codio startup.sh is also copied into the workspace so that mysql and apache are started each time the Codio box is accessed.
 
